@@ -13,8 +13,9 @@ back consumer interest. Sony gave stores like BestBuy, Target, and Walmart a lim
 year since the console was released, and you can't go into stores and buy it. Online releases are random, and no one has the time to check 
 a link or website to see when the item is available. It's a first come, first serve scenario. So I made a bot.</p> 
 
-
-
+## Project History:
+On September 9 - 11, 2021,  I did not have that much knowledge of how to use GitHub (so no documented history besides file property 
+on the computer when you right-click shows when created and text messages). It worked the page, opened the website it added the item of choice to the cart. Then headed to the logging page if the user wasn't logging already. In late 2022 decided to revamp the project using OPP. In my opinion, the code looked sloppy. I felt it could look better, so I took on the challenge.
 
 
 
