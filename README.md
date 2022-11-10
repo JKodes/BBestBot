@@ -26,11 +26,11 @@ a link or website to see when the item is available. It's a first come, first se
 
 
 ## Issues Downsides:
-(1)I think these companies monitor your IP address because once you attempt to run the bot multiple times a day. When it's time
+(1) I think these companies monitor your IP address because once you attempt to run the bot multiple times a day. When it's time
 to log in and finalize the purchase and your address. You are met with an error. This has nothing to do with the code but with 
 the company eliminating spammers. This makes sense why higher-end bots use a proxy or VPN of some sort to network filter. 
 
-(2)It has no GUI interface which means the user needs to know how to handle file changes to change an item of choice and apply 
+(2) It has no GUI interface which means the user needs to know how to handle file changes to change an item of choice and apply 
 credentials to log in and make the purchase. 
 
 <h3>Conclusion</h3>
