@@ -18,12 +18,11 @@ a link or website to see when the item is available. It's a first come, first se
 
 
 
-
 ## Thoughts Ideal Approaches:
 (1) Some Twitter pages announce the days when certain companies restock the console by time and date.
 (should we web scrape that profile for new release links and have a bot do the rest)
 
-(2) leave the website of the store open with a bot looking at eternal sources indicating restock due to backend, information wethers its database amount change or the HTML tag for the  buy button change from unviable to purchase or buy it now
+(2) Leave the website of the store open with a bot looking at eternal sources indicating restock due to backend, information wethers its database amount change or the HTML tag for the  buy button change from unviable to purchase or buy it now
 
 
 ## Issues Downsides:
@@ -33,3 +32,9 @@ the company eliminating spammers. This makes sense why higher-end bots use a pro
 
 (2)It has no GUI interface which means the user needs to know how to handle file changes to change an item of choice and apply 
 credentials to log in and make the purchase. 
+
+<h3>Conclusion</h3>
+<ul>
+  <li>Use the bot as minimum as possible to avoid being blocked completely. At least 3 -5 times sporadically.</li>
+  <li>Comments would be used to indicate where the user should input information.</li>
+</ul>
