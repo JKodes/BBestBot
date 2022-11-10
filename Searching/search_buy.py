@@ -1,4 +1,4 @@
-import Searching.constants
+import searching.constants
 import os
 from selenium import webdriver
 
@@ -10,4 +10,4 @@ class Searching(webdriver.Chrome):
 
 
     def main_page(self):
-        self.get(Searching.constants.BASE_URL)
+        self.get(searching.constants.BASE_URL)
