@@ -1,6 +1,9 @@
-import Searching.search_buy 
+import searching.search_buy 
 
 
 
-run = Searching.search_buy.Searching()
-run.main_page()
+#run = searching.search_buy.Searching()
+#run.main_page()
+
+with searching.search_buy.Searching() as done:
+    done.main_page()
