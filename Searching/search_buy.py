@@ -8,6 +8,7 @@ class Searching(webdriver.Chrome):
         self.teardown = teardown
         os.environ['PATH'] += self.driver_path
         super(Searching, self).__init__()
+        self.implicitly_wait(9)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if self.teardown:
