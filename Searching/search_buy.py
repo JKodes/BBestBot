@@ -24,3 +24,18 @@ class Searching(webdriver.Chrome):
         search_nav = self.find_element(By.XPATH, '//*[@id="gh-search-input"]')
         search_nav.send_keys(item)
 
+    def click_button(self):
+        search = self.find_element(By.CSS_SELECTOR,  'button[type="submit"]')
+        search.click()
+
+    def add_to_cart(self):
+        add_item = self.find_element(By.CSS_SELECTOR, 'button[data-button-state="ADD_TO_CART"]' )
+        add_item.click()
+
+    def go_to_cart(self):
+        go = self.find_element(By.CLASS_NAME, 'go-to-cart-button')
+        go.click()
+
+    def checkout(self):
+        check_out = self.find_element(By.CSS_SELECTOR, 'button[data-track="Checkout - Top"]')
+        check_out.click()
