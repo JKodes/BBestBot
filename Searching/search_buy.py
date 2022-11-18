@@ -39,3 +39,12 @@ class Searching(webdriver.Chrome):
     def checkout(self):
         check_out = self.find_element(By.CSS_SELECTOR, 'button[data-track="Checkout - Top"]')
         check_out.click()
+
+    def returning_customer_email(self, email):
+        email_address = self.find_element(By.ID, 'fld-e')
+        email_address.send_keys(email)
+
+    def returning_customer_password(self, password):
+        pswd = self.find_element_(By.ID, 'fld-p1')
+        pswd.send_keys(password)
+    
