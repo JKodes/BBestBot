@@ -50,3 +50,5 @@ class Searching(webdriver.Chrome):
         sign = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
         sign.click()
 
+    
+
