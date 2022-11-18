@@ -17,7 +17,8 @@ a link or website to see when the item is available. It's a first come, first se
 On September 9 - 11, 2021,  I did not have that much knowledge of how to use GitHub (so no documented history besides file property 
 on the computer when you right-click shows when created and text messages). It worked the page, opened the website it added the item of choice to the cart. Then headed to the logging page if the user wasn't logging already. In late 2022 decided to revamp the project using OPP. In my opinion, the code looked sloppy. I felt it could look better, so I took on the challenge.
 
-
+## How it Works:
+The main component is the Selenium Webdriver. It's a web framework that allows you to automate web-based applications for testing. It uses key components  from HTML like elements, id, classes then applied with some methods.
 
 ## Thoughts Ideal Approaches:
 (1) Some Twitter pages announce the days when certain companies restock the console by time and date.
