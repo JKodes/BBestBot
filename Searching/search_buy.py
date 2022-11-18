@@ -45,6 +45,8 @@ class Searching(webdriver.Chrome):
         email_address.send_keys(email)
 
     def returning_customer_password(self, password):
-        pswd = self.find_element_(By.ID, 'fld-p1')
+        pswd = self.find_element(By.ID, 'fld-p1')
         pswd.send_keys(password)
-    
+        sign = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
+        sign.click()
+
