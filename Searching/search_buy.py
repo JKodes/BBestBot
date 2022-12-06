@@ -50,5 +50,13 @@ class Searching(webdriver.Chrome):
         sign = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
         sign.click()
 
-    
+
+    def alt_login(self):
+        
+
+        if self.find_element(By.ID, 'fld-e')== '' and self.find_element(By.ID, 'fld-p1')== '':
+            guest_button = self.find_element(By.CLASS_NAME, 'button_wrap')
+            guest_button.click()
+        
+
 
