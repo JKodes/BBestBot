@@ -49,14 +49,17 @@ class Searching(webdriver.Chrome):
         pswd.send_keys(password)
         sign = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
         sign.click()
+        place_order = self.find_element(By.CSS_SELECTOR, 'button[data-track="Place your Order - Contact Card"]')
+        place_order.click()
 
 
-    def alt_login(self):
-        
 
-        if self.find_element(By.ID, 'fld-e')== '' and self.find_element(By.ID, 'fld-p1')== '':
-            guest_button = self.find_element(By.CLASS_NAME, 'button_wrap')
-            guest_button.click()
+     
+
+
+      
+
+    
         
 
 
