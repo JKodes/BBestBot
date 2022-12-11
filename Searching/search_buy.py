@@ -35,6 +35,9 @@ class Searching(webdriver.Chrome):
     def go_to_cart(self):
         go = self.find_element(By.CLASS_NAME, 'go-to-cart-button')
         go.click()
+        #here we need have option for when person need item to come the house
+        deliver_home = self.find_element(By.ID, 'fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo')
+        deliver_home.click()
 
     def checkout(self):
         check_out = self.find_element(By.CSS_SELECTOR, 'button[data-track="Checkout - Top"]')
@@ -54,7 +57,7 @@ class Searching(webdriver.Chrome):
 
 
 
-     
+     #<input class="c-radio-input appearance-none h-full w-full border-25 rounded-full" type="radio" id="fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo" name="availability-selection">
 
 
       
