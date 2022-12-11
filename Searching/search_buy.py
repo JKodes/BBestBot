@@ -21,6 +21,12 @@ class Searching(webdriver.Chrome):
         self.get(searching.constants.BASE_URL)
 
     def get_rid_of_survey(self):###
+        try:
+            no_thanks = self.find_element_by_id('survey_invite_no')
+            no_thanks.click()
+        except:
+            print('Continuing to the procss...')
+
 
     def type_item_of_choice(self, item):
         search_nav = self.find_element(By.XPATH, '//*[@id="gh-search-input"]')
