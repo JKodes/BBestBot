@@ -20,6 +20,8 @@ class Searching(webdriver.Chrome):
     def main_page(self):
         self.get(searching.constants.BASE_URL)
 
+    def get_rid_of_survey(self):###
+
     def type_item_of_choice(self, item):
         search_nav = self.find_element(By.XPATH, '//*[@id="gh-search-input"]')
         search_nav.send_keys(item)
@@ -36,8 +38,13 @@ class Searching(webdriver.Chrome):
         go = self.find_element(By.CLASS_NAME, 'go-to-cart-button')
         go.click()
         #here we need have option for when person need item to come the house
-        deliver_home = self.find_element(By.ID, 'fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo')
-        deliver_home.click()
+        deliver_home = self.find_element(By.CSS_SELECTOR, 'input[@id="fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm"]')
+        if not deliver_home.is_selected():
+            deliver_home.click()
+            
+
+        #deliver_home = self.find_element(By.ID, 'fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo')
+        #deliver_home.click()
 
     def checkout(self):
         check_out = self.find_element(By.CSS_SELECTOR, 'button[data-track="Checkout - Top"]')
@@ -58,7 +65,7 @@ class Searching(webdriver.Chrome):
 
 
      #<input class="c-radio-input appearance-none h-full w-full border-25 rounded-full" type="radio" id="fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo" name="availability-selection">
-
+    # //*[@id="fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm"]
 
       
 
