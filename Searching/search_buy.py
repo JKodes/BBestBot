@@ -9,7 +9,7 @@ class Searching(webdriver.Chrome):
         self.teardown = teardown
         os.environ['PATH'] += self.driver_path
         super(Searching, self).__init__()
-        self.implicitly_wait(9)
+        self.implicitly_wait(20)
         
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -25,7 +25,7 @@ class Searching(webdriver.Chrome):
             no_thanks = self.find_element_by_id('survey_invite_no')
             no_thanks.click()
         except:
-            print('Continuing to the procss...')
+            print('Continuing to the process...')
 
 
     def type_item_of_choice(self, item):
@@ -44,10 +44,15 @@ class Searching(webdriver.Chrome):
         go = self.find_element(By.CLASS_NAME, 'go-to-cart-button')
         go.click()
         #here we need have option for when person need item to come the house
-        deliver_home = self.find_element(By.CSS_SELECTOR, 'input[@id="fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm"]')
-        if not deliver_home.is_selected():
+
+    def pick_or_drop(self):
+        store_pickup = self.find_element(By.CSS_SELECTOR, "input[type='radio'][id='fulfillment-ispu-m1enning7kz1-4lbzlw89lhror']")
+        store_pickup.click()
+        if store_pickup.is_selected():
+            deliver_home = self.find_element(By.CSS_SELECTOR, "input[type='radio'][id='fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm']")
             deliver_home.click()
-            
+        
+        #<input class="c-radio-input appearance-none h-full w-full border-25 rounded-full" type="radio" id="fulfillment-ispu-m1enning7kz1-4lbzlw89lhror" name="availability-selection">
 
         #deliver_home = self.find_element(By.ID, 'fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo')
         #deliver_home.click()
