@@ -20,7 +20,7 @@ class Searching(webdriver.Chrome):
     def main_page(self):
         self.get(searching.constants.BASE_URL)
 
-    def get_rid_of_survey(self):###
+    def get_rid_of_survey(self):
         try:
             no_thanks = self.find_element_by_id('survey_invite_no')
             no_thanks.click()
@@ -61,7 +61,8 @@ class Searching(webdriver.Chrome):
         place_order = self.find_element(By.CSS_SELECTOR, 'button[data-track="Place your Order - Contact Card"]')
         place_order.click()
 
-        account_email = self.returning_customer_email()
+        
+
 
     
 
