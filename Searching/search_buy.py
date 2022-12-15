@@ -25,7 +25,7 @@ class Searching(webdriver.Chrome):
             no_thanks = self.find_element_by_id('survey_invite_no')
             no_thanks.click()
         except:
-            print('Continuing to the process...')
+            print('Continuing to the process... No Survey was found continue buying product')
 
 
     def type_item_of_choice(self, item):
@@ -43,19 +43,7 @@ class Searching(webdriver.Chrome):
     def go_to_cart(self):
         go = self.find_element(By.CLASS_NAME, 'go-to-cart-button')
         go.click()
-        #here we need have option for when person need item to come the house
-
-    def pick_or_drop(self):
-        store_pickup = self.find_element(By.CSS_SELECTOR, "input[type='radio'][id='fulfillment-ispu-m1enning7kz1-4lbzlw89lhror']")
-        store_pickup.click()
-        if store_pickup.is_selected():
-            deliver_home = self.find_element(By.CSS_SELECTOR, "input[type='radio'][id='fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm']")
-            deliver_home.click()
-        
-        #<input class="c-radio-input appearance-none h-full w-full border-25 rounded-full" type="radio" id="fulfillment-ispu-m1enning7kz1-4lbzlw89lhror" name="availability-selection">
-
-        #deliver_home = self.find_element(By.ID, 'fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo')
-        #deliver_home.click()
+       
 
     def checkout(self):
         check_out = self.find_element(By.CSS_SELECTOR, 'button[data-track="Checkout - Top"]')
@@ -68,19 +56,20 @@ class Searching(webdriver.Chrome):
     def returning_customer_password(self, password):
         pswd = self.find_element(By.ID, 'fld-p1')
         pswd.send_keys(password)
-        sign = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
-        sign.click()
+        sign_in = self.find_element(By.CSS_SELECTOR, 'button[data-track="Sign In"]')
+        sign_in.click()
         place_order = self.find_element(By.CSS_SELECTOR, 'button[data-track="Place your Order - Contact Card"]')
         place_order.click()
 
-
-
-     #<input class="c-radio-input appearance-none h-full w-full border-25 rounded-full" type="radio" id="fulfillment-shipping-4a04kspiu9zhp-48wuu8onhqkgo" name="availability-selection">
-    # //*[@id="fulfillment-shipping-1degmoimpbf1p-4fpfj92pvqopm"]
-
-      
+        account_email = self.returning_customer_email()
 
     
-        
 
 
+
+     
+    
+
+
+
+    
