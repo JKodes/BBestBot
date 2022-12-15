@@ -11,6 +11,7 @@ with searching.search_buy.Searching() as done:
     done.click_button()
     done.add_to_cart()
     done.go_to_cart()
+    done.pick_or_drop()
     done.checkout()
     done.returning_customer_email('')  #email for people who already have an account, but not signed in
     done.returning_customer_password('') #password for people who already have an account, but not signed in
