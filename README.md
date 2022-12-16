@@ -1,4 +1,4 @@
-# BBestBot
+# BBestBot (BETA)
 ## Back Story:
 <p>Over a year, many sad customers did not receive the game system. The price started to rise. Customers blamed the store and Sony 
 for not having enough to please everyone's needs. But Sony responded with a statement in condensed terms, basically saying because 
@@ -37,6 +37,7 @@ credentials to log in and make the purchase.
 
 <h3>Conclusion</h3>
 <ul>
-  <li>Use the bot as minimum as possible to avoid being blocked completely. At least 3 -5 times sporadically.</li>
+  <li>Use the bot as minimum as possible to avoid being blocked completely. At least 3-5 times sporadically.</li>
   <li>Comments would be used to indicate where the user should input information.</li>
+  <li>If account is already created that would be nice this creates a better experience for the user</li>
 </ul>
