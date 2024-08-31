@@ -41,3 +41,5 @@ credentials to log in and make the purchase.
   <li>Comments would be used to indicate where the user should input information.</li>
   <li>If account is already created that would be nice this creates a better experience for the user</li>
 </ul>
+
+##How to Use 
